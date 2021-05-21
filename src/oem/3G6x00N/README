@@ -1,0 +1,37 @@
+Package List
+============
+  3G6x00N_GPL_xxxxxxxx.tgz - containing the toolchain to build
+  Linux kernel and application and Linux kernel source and the source
+  tree for the all applications.
+
+
+Environment
+===========
+  Fedora Core 8 is recommended.
+
+  Please install the following packages if those packages are not available.
+
+  compat-gcc: type "yum install compat-gcc-34.i386" to install.
+              after install compat-gcc, please type "ln -s /usr/bin/gcc34 /usr/bin/gcc" 
+  byacc     : type "yum install byacc.i386" to install byacc.
+  rcs       : type "yum install rcs.i386" to install rcs.
+  
+  
+
+
+Install ToolChain
+=================
+  1. Copy '3G6x00N_GPL_xxxxxxxx.tgz' to /home on a Linux PC.
+  2. Change the current directory to /home and type 'tar xfzv 3G6x00N_GPL_xxxxxxxx.tgz'
+     to extract the package.
+  3. Change the current directory to /home/3G6x00N and type './PREPARE.sh'
+     to install the toolchain
+
+
+Build Image
+==============================
+  1. Change the current directory to /home/3G6x00N and type './BUILD.sh'
+     to build the firmware image.
+  2. The built firmware image will be placed in /home/3G6x00N/image.
+
+

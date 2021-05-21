@@ -1,0 +1,2 @@
+#!/bin/sh
+./COMPILING-SCRIPT.sh 3G6400N General 1.00 RT305X_3200

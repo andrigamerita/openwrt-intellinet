@@ -1,0 +1,18 @@
+1.buildroot-gdb-32bit.tar.bz2:
+   cross-compiler to build linux image (32bit version)
+
+2.buildroot-gdb-64bit.tar.bz2:
+   cross-compiler to build linux image (64bit version)
+
+3.buildroot-gdb-src.tar.bz2:
+   cross-compiler to build linux image (source code)
+
+4.mips4KCle.tar.bz2: 
+  cross-compiler to build Uboot image
+
+5.lzma-4.32.0beta5/
+   lzma compress/decompress program  
+   http://tukaani.org/lzma/
+
+6. mksquash_lzma-3.2/
+   Squash filesystem with lzma compress tool for linux-2.6

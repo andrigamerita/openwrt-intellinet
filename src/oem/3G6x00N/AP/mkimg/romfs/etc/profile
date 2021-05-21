@@ -1,0 +1,60 @@
+#!/bin/sh
+date 2000.1.1-0:0:0
+ifconfig lo 127.0.0.1 netmask 255.255.255.255
+
+. /web/FUNCTION_SCRIPT
+
+/bin/mount -t sysfs sysfs /sys
+/bin/mount -t proc proc /proc
+/bin/mount -t usbfs none /proc/bus/usb
+
+/bin/mount -o loop -t ramfs /dev/ram0 /var
+/bin/mount -o loop -t ramfs /dev/ram0 /tmp
+/bin/mount -o loop -t ramfs /dev/ram0 /dev
+
+cp -Rf /dev.tmp/* /dev
+mkdir -p /dev/pts
+mount -o loop -t ramfs /dev/ram0 /etc
+cp -Rf /etc.tmp/* /etc
+
+DIRS="l2tp usr/share/udhcpc web ppp etc/udhcpc etc/udhcpd dnrd run lib/misc linuxigd tmp log dev/pts lock wan dial"
+
+for dir in $DIRS ; do
+	mkdir -p /var/$dir
+done
+
+for minor in 0 1 2 3 4 5 6 7 8 9 10 ; do
+	mknod -m666 /dev/pts/$minor c 136 $minor
+done
+
+ifconfig eth2 up
+vconfig add eth2 1
+vconfig add eth2 2
+
+switch reg w 14 405555
+switch reg w 50 2001
+switch reg w 98 7f3f
+switch reg w e4 3f
+switch reg w 40 1001
+switch reg w 44 1001
+switch reg w 48 1002
+switch reg w 70 ffff506f
+mii_mgr -s -p 0 -r 0 -v B100
+mii_mgr -s -p 1 -r 0 -v B100
+mii_mgr -s -p 2 -r 0 -v B100
+mii_mgr -s -p 3 -r 0 -v B100
+mii_mgr -s -p 4 -r 0 -v B100
+
+brctl addbr br0
+brctl addif br0 eth2.1
+brctl addif br0 eth2.2
+
+ifconfig eth2.1 up
+ifconfig eth2.2 up
+ifconfig br0 192.168.1.6 up
+
+syslogd -C
+/bin/gpio&
+
+# start web server
+webs&

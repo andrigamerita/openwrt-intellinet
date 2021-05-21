@@ -1,0 +1,4 @@
+SAY "\nSending break to the 3G modem\n"
+"" "\K"
+"" "+++ATH0"
+SAY "\nPDP context detached\n"

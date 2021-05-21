@@ -1,0 +1,12 @@
+CROSS_COMPILE=/opt/buildroot-gcc342/bin/mipsel-linux-uclibc-
+
+CC=${CROSS_COMPILE}gcc \
+AR=${CROSS_COMPILE}ar \
+LD=${CROSS_COMPILE}ld \
+NM=${CROSS_COMPILE}nm \
+OBJCOPY=${CROSS_COMPILE}objcopy \
+OBJDUMP=${CROSS_COMPILE}objdump \
+STRIP=${CROSS_COMPILE}strip \
+RANLIB=${CROSS_COMPILE}ranlib \
+CXX=${CROSS_COMPILE}g++ \
+./configure --host=mipsel-linux

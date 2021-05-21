@@ -1,0 +1,164 @@
+print "Scanning modem port .....\n"
+
+let n=val($env("PORTNUM"))-1
+print "Registered ttyUSB port#: ",n,"\n"
+if n=0 goto timeout
+
+:test_ttyUSB0
+  open com /dev/ttyUSB0
+  set com 57600n81
+  set senddelay 0.05
+  waitquiet 2 0.5
+  send "AT+CFUN?^m" # for Quanta MU-Q101
+  send "AT^m"
+  waitfor 2 "OK"
+  if % = -1 goto test_ttyUSB1
+  if % = 0 goto infocont
+
+:test_ttyUSB1
+  if n<2 goto timeout
+  open com /dev/ttyUSB1
+  set com 57600n81
+  set senddelay 0.05
+  waitquiet 2 0.5
+  send "AT^m"
+  waitfor 2 "OK"
+  if % = -1 goto test_ttyUSB2
+  if % = 0 goto infocont
+
+:test_ttyUSB2
+  if n<3 goto timeout
+  open com /dev/ttyUSB2
+  set com 57600n81
+  set senddelay 0.05
+  waitquiet 2 0.5
+  send "AT^m"
+  waitfor 2 "OK"
+  if % = -1 goto test_ttyUSB3
+  if % = 0 goto infocont
+
+:test_ttyUSB3
+  if n<4 goto timeout
+  open com /dev/ttyUSB3
+  set com 57600n81
+  set senddelay 0.05
+  waitquiet 2 0.5
+  send "AT^m"
+  waitfor 2 "OK"
+  if % = -1 goto test_ttyUSB4
+  if % = 0 goto infocont
+
+:test_ttyUSB4
+  if n<5 goto timeout
+  open com /dev/ttyUSB4
+  set com 57600n81
+  set senddelay 0.05
+  waitquiet 2 0.5
+  send "AT^m"
+  waitfor 2 "OK"
+  if % = -1 goto timeout
+  if % = 0 goto infocont
+
+:timeout
+  print "Error! No ttyUSB port found!\n"
+  exit 1
+
+:infocont
+  print "Found ttyUSB Port ==> ",$dev(),"\n"
+  open file "/tmp/RUN_DEV_INT"
+  fprint "device=",$dev(),"\n"
+  close file
+  send "AT+CFUN?^m"
+  get 1 "" $s
+  print $s
+  send "AT+CFUN=1^m"
+  get 1 "" $s
+  print $s
+  send "AT+CPIN?^m"
+  get 1 "" $s
+  print $s
+  send "ATI^m"
+  get 1 "" $s
+  print $s
+  #get 1 "^m" $s
+
+#:more
+#  get 1 "^m" $s
+#  let x=len($s)
+#  if $s="OK\n" goto manf
+  #dump
+#  if x<1 goto manf
+#  if x>5 goto manf # for MF-622 will keep printing ZUSIMR:2
+#  if $s="\n" goto more
+#  print $s
+#  goto more
+
+:manf
+  #print "\n====\n"
+  print "\n"
+  waitquiet 2 0.1
+  print "Manufacturer:           "
+  send "AT+cgmi^m"
+  get 1 "^m" $s
+  get 1 "^m" $s
+  let x=len($s)
+  if x<1 goto imei_serial
+  dec x
+  let $s=$right($s,x)
+  print $s,"\n"
+
+:imei_serial
+  waitquiet 5 0.1
+  print "IMEI and Serial Number: "
+  send "AT+GSN^m"
+  get 2 "^m" $s
+  get 2 "^m" $s
+  let x=len($s)
+  dec x
+  let $s=$right($s,x)
+  print ,$s,"\n"
+
+:firmware
+  waitquiet 5 0.1
+  print "Manufacturer's Revision: "
+  send "AT+GMR^m"
+  get 2 "^m" $s
+  get 2 "^m" $s
+  let x=len($s)
+  dec x
+  dec x
+  let $s=$left($s,x)
+  print $s,"\n"
+
+:networklock
+  waitquiet 5 0.1
+  print "Network Locked:         "
+  send "AT+clck=\"PN\",2^m"
+  get 2 " ^m" $s
+  get 2 " ^m" $s
+  get 2 " ^m" $s
+  print $s,"\n"
+  waitquiet 5 0.1
+
+:bandsettings
+  waitquiet 5 0.1
+  print "Band settings:          "
+  send "AT_OSBM?^m"
+  get 2 " ^m" $s
+  get 2 " ^m" $s
+  get 2 " ^m" $s
+  if $s="4" print "Europe 900/1800MHz "
+  if $s="5" print "USA 900/1900MHz "
+  print "(",$s,")\n" 
+
+:apn
+  waitquiet 5 0.1
+  print "APN:                    "
+  send "AT+CGDCONT?^m"
+  get 2 " ^m" $s
+  get 2 " ^m" $s
+  get 2 " ^m" $s
+  print $s,"\n" 
+  waitquiet 5 0.1  
+  print "##### END #####\n"
+

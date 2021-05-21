@@ -1,0 +1,11 @@
+PLATFORM=-D_RT305X_
+MODEL=-D_3G6400N_
+ENDIAN=
+GATEWAY=y
+CROSS=/opt/buildroot-gcc342/bin/mipsel-linux-uclibc-
+CROSS_LINUX=/opt/buildroot-gcc342/bin/mipsel-linux-uclibc-
+CROSS_COMPILE=/opt/buildroot-gcc342/bin/mipsel-linux-uclibc-
+CROSS_PATH=/opt/buildroot-gcc342
+WLDEV=-D_RALINK_WL_DEVICE_
+PSDEV=-D_OFF_PS_DEVICE_
+SDEV=-D_OFF_S_DEVICE_

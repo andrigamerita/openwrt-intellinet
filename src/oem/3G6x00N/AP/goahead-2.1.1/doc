@@ -1,0 +1,773 @@
+fwaddpc.asp
+
+Start IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid Start IP address
+
+Invalid port number! It should be the decimal number (0-9).
+
+Do you really want to delete the selected entry?
+
+Do you really want to delete the all entries?
+
+fwadv.asp
+
+Invalid value. It should be in decimal number (0-9).
+
+Invalid value of packet of Ping of Death. Input value should be between 0-255 in decimal.
+
+Invalid value of Burst of Ping of Death. Input value should be between 0-255 in decimal.
+
+Invalid value of packet of Sync Flood. Input value should be between 0-255 in decimal.
+
+Invalid value of Burst of Sync Flood. Input value should be between 0-255 in decimal.
+
+fwcontrol.asp
+
+Input MAC address is not complete. It should be 12 digits in hex.
+
+Invalid MAC address. It should be in hex number (0-9 or a-f).
+
+Do you really want to delete the selected entry?
+
+Do you really want to delete the all entries?
+
+Please entry the MAC when you enable the MAC Filtering function.
+
+Please entry the IP address when you enable the IP Filtering function.
+
+fwdmz.asp
+
+cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid
+
+Public IP address
+
+Client IP address
+
+Do you really want to delete the selected entry?
+
+Do you really want to delete the all entries?
+
+fwurlb.asp
+
+Invalid URL Blocking .
+
+Do you really want to delete the selected entry?
+
+Do you really want to delete the all entries?
+
+index.asp
+
+Wireless Router
+
+Half hour
+
+One hour
+
+Two hours
+
+Half Day
+
+One Day
+
+Two Days
+
+One Week
+
+Two Weeks
+
+Forever
+
+IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid Public IP address
+
+Subnet mask cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid subnet mask value. It should be the decimal number (0-9).
+
+Invalid subnet mask in 1st digit.
+
+Invalid subnet mask in 2nd digit.
+
+Invalid subnet mask in 3rd digit.
+
+Invalid subnet mask in 4th digit.
+
+DHCP client start address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid Public IP address
+
+Invalid DHCP client start IP address!\nIt should be located in the same subnet of current IP address.
+
+DHCP client end address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid Public IP address
+
+Invalid DHCP client end IP address!\nIt should be located in the same subnet of current IP address.
+
+Invalid DHCP client IP address range!\nEnding address should be greater than starting address.
+
+Invalid Domain Name. It should be alphanumeric characters.
+
+IP address was modified, you have to re-connect the WebServer with the new address.
+
+natalg.asp
+
+Support for Amanda backup tool protocol.
+
+Support for eggdrop bot networks.
+
+Support for FTP.
+
+Support for H323/netmeeting.
+
+Allows DCC to work though NAT and connection tracking.
+
+Support for Microsoft Streaming Media Services protocol.
+
+Support for Quake III Arena connection tracking and nat.
+
+Allows netfilter to track talk connections.
+
+Support for TFTP.
+
+Support for Starcraft/Battle.net game protocol.
+
+Support for MSN file tranfer.
+
+natpfw.asp
+
+IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid IP address
+
+Port range cannot be empty! You should set a value between 1-65535.
+
+Invalid port number! It should be the decimal number (0-9).
+
+Invalid port number! You should set a value between 1-65535.
+
+Invalid port number! It should be the decimal number (0-9).
+
+Invalid port number! You should set a value between 1-65535.
+
+Invalid port range! 1st port value should be less than 2nd value.
+
+Do you really want to delete the selected entry?
+
+Do you really want to delete the all entries?
+
+natsapp.asp
+
+You should set a trigger-port range for adding in an entry.
+
+Invalid trigger-port number! It should be the decimal number (0-9).
+
+Invalid trigger-port number! You should set a value between 1-65535.
+
+Invalid trigger-port number! It should be the decimal number (0-9).
+
+Invalid trigger-port number! You should set a value between 1-65535.
+
+Invalid trigger-port range! 1st port value should be less than 2nd value.
+
+You should set a incoming-port range for adding in an entry.
+
+Invalid Port number! It should be the decimal number (0-9).
+
+Do you really want to delete the selected entry?
+
+Do you really want to delete the all entries?
+
+natsrout.asp
+
+It should be the number of 0, 128, 192, 224, 240, 248, 252 or 254
+
+ value. It should be the decimal number (0-9).
+
+ range in 1st digit. It should be 0-255.
+
+ range in 2nd digit. It should be 0-255.
+
+ range in 3rd digit. It should be 0-255.
+
+ range in 4th digit. It should be 0-254.
+
+Destination LAN IP cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid Destination LAN IP
+
+Subnet mask cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid subnet mask value. It should be the decimal number (0-9).
+
+Invalid subnet mask in 1st digit.
+
+Invalid subnet mask in 2nd digit.
+
+Invalid subnet mask in 3rd digit.
+
+Invalid subnet mask in 4th digit.
+
+Default Gateway cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid Default Gateway
+
+Hop Count cannot be empty! You should set a value between 0-255.
+
+Invalid Hop Count number! It should be the decimal number (0-9).
+
+Invalid Hop Count number! You should set a value between 0-255.
+
+Do you really want to delete the selected entry?
+
+Do you really want to delete the all entries?
+
+natvser.asp
+
+IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid IP address
+
+Private Port cannot be empty! You should set a value between 1-65535.
+
+Invalid port number! It should be the decimal number (0-9).
+
+Invalid port number! You should set a value between 1-65535.
+
+Public Port cannot be empty! You should set a value between 1-65535.
+
+Invalid port number! It should be the decimal number (0-9).
+
+Invalid port number! You should set a value between 1-65535.
+
+Do you really want to delete the selected entry?
+
+Do you really want to delete the all entries?
+
+stadevice.asp
+
+Wireless Configuration
+
+ESSID
+
+Channel Number
+
+WEP
+
+AP
+
+Station-Ad Hoc
+
+Station-Infrastructure
+
+AP Bridge-Point to Point
+
+AP Bridge-Point to Multi-Point
+
+AP Bridge-WDS
+
+Security
+
+Disable
+
+WEP
+
+802.1x
+
+802.1x WEP static key
+
+WPA-shared key
+
+WPA-RADIUS
+
+Associated Clients
+
+State
+
+stats.asp
+
+Wireless LAN
+
+Sent Packets
+
+Received Packets
+
+syspasswd.asp
+
+Password is not matched. Please type the same password between \'new\' and \'confirmed\' box.
+
+Cannot accept space character in password. Please try it again.
+
+ value. It should be the decimal number (0-9).
+
+ range in 1st digit. It should be 0-255.
+
+ range in 2nd digit. It should be 0-255.
+
+ range in 3rd digit. It should be 0-255.
+
+ range in 4th digit. It should be 0-254.
+
+IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid IP address
+
+You should set a Port for adding in an entry.
+
+Invalid Port Number! It should be the decimal number (0-9).
+
+Invalid Port Number! You should set a value between 1-65535.
+
+systimezone.asp
+
+January
+
+February
+
+March
+
+April
+
+May
+
+June
+
+July
+
+August
+
+September
+
+October
+
+November
+
+December
+
+ value. It should be the decimal number (0-9).
+
+ range in 1st digit. It should be 0-255.
+
+ range in 2nd digit. It should be 0-255.
+
+ range in 3rd digit. It should be 0-255.
+
+ range in 4th digit. It should be 0-254.
+
+IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid IP address
+
+test.asp
+
+System
+
+Time Zone
+
+Password Settings
+
+Remote Management
+
+WAN
+
+Dynamic IP
+
+Static IP
+
+PPPoE
+
+PPTP
+
+L2TP
+
+Telstra Big Pond
+
+DNS
+
+DDNS
+
+Wireless
+
+Basic Settings
+
+Advanced Settings
+
+Security
+
+Encryption
+
+Access Control
+
+NAT
+
+Port Forwarding
+
+Virtual Server
+
+Special Applications
+
+UPnP Settings
+
+ALG Settings
+
+Static Routing
+
+Firewall
+
+Access Control
+
+URL Blocking
+
+DoS
+
+DMZ
+
+
+
+Access Control
+
+URL Blocking
+
+DoS
+
+DMZ
+
+tlcon.asp
+
+Do you really want to reset the current settings to default?
+
+tlreset.asp
+
+Do you really want to reset the Broadband router ??
+
+It may take some time to complete this process and restart the system.\n Please don't turn off the Broadband router before the process is complete.
+
+tlstorage.asp
+
+Do you really want to reset the current settings to default?
+
+tlupgrade.asp
+
+Do you wish to continue with the upgrade process?
+
+At the end of the upgrade, the Broadband router may not respond\n to commands for as long as one minute.\n This is normal behavior and do not turn off Broadband router during the time.
+
+wanddns.asp
+
+Domain Name cannot be empty!
+
+Account/E-Mail cannot be empty!
+
+DDNS password cannot be empty!
+
+HostID cannot be empty!
+
+Invalid HostID number! It should be the decimal number (0-9).
+
+IP address cannot be empty! It should be FQDN name or IP address.
+
+HostPass cannot be empty!
+
+wandip.asp
+
+Input MAC address is not complete. It should be 12 digits in hex.
+
+Invalid MAC address. It should be in hex number (0-9 or a-f).
+
+wandns.asp
+
+Invalid DNS1 address
+
+Invalid DNS2 address
+
+wanl2tp.asp
+
+IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid IP address
+
+Subnet mask cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid subnet mask value. It should be the decimal number (0-9).
+
+Invalid subnet mask in 1st digit.
+
+Invalid subnet mask in 2nd digit.
+
+Invalid subnet mask in 3rd digit.
+
+Invalid subnet mask in 4th digit.
+
+Invalid default gateway address
+
+L2TP user name cannot be empty!
+
+L2TP password cannot be empty!
+
+L2TP Gateway cannot be empty!
+
+Invalid L2TP Gateway address
+
+Invalid idle time value! You should set a value between 1-1000.
+
+Input MAC address is not complete. It should be 12 digits in hex.
+
+Invalid MAC address. It should be in hex number (0-9 or a-f).
+
+Invalid MTU value! You should set a value between 512-1492.
+
+wanpppoe.asp
+
+PPPoE user name cannot be empty!
+
+PPPoE password cannot be empty!
+
+Invalid idle time value! You should set a value between 1-1000.
+
+Invalid MTU value! You should set a value between 512-1492.
+
+Continuous
+
+Connect on Demand
+
+Manual
+
+wanpptp.asp
+
+IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid IP address
+
+Subnet mask cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid subnet mask value. It should be the decimal number (0-9).
+
+Invalid subnet mask in 1st digit.
+
+Invalid subnet mask in 2nd digit.
+
+Invalid subnet mask in 3rd digit.
+
+Invalid subnet mask in 4th digit.
+
+Invalid default gateway address
+
+Input MAC address is not complete. It should be 12 digits in hex.
+
+Invalid MAC address. It should be in hex number (0-9 or a-f).
+
+PPTP User ID cannot be empty!
+
+PPTP password cannot be empty!
+
+Invalid PPTP Gateway address
+
+Invalid PPTP default gateway address!\nIt should be located in the same subnet of current IP address.
+
+Invalid idle time value! You should set a value between 1-1000
+
+Invalid MTU value! You should set a value between 512-1492.
+
+wansip.asp
+
+IP address
+
+gateway address
+
+DNS address
+
+wantelstra.asp
+
+IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid IP address
+
+Telstra Big Pond user name cannot be empty!
+
+Telstra Big Pond password cannot be empty!
+
+wl1x.asp
+
+ value. It should be the decimal number (0-9).
+
+ range in 1st digit. It should be 0-255.
+
+ range in 2nd digit. It should be 0-255.
+
+ range in 3rd digit. It should be 0-255.
+
+ range in 4th digit. It should be 1-254.
+
+Invalid port number of RADIUS Server! It should be a decimal number between 1-65535.
+
+Invalid port number of RADIUS Server! It should be a decimal number between 1-65535.
+
+RADIUS Server IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid RADIUS Server IP address
+
+wladvance.asp
+
+Fragment Threshold
+
+RTS Threshold
+
+Beacon Interval
+
+Beacon Interval
+
+ DTIM Period
+
+wlars.asp
+
+ value. It should be the decimal number (0-9).
+
+range in 1st digit. It should be 0-255.
+
+range in 2nd digit. It should be 0-255.
+
+range in 3rd digit. It should be 0-255.
+
+range in 4th digit. It should be 1-254.
+
+Invalid port number of RADIUS Server! It should be a decimal number between 1-65535.
+
+Invalid port number of RADIUS Server! It should be a decimal number between 1-65535.
+
+RADIUS Server IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid RADIUS Server IP address
+
+You should select one unicast cipher at least.
+
+wlbasic.asp
+
+ESSID cannot be empty!
+
+MAC address 1
+
+MAC address 2
+
+MAC address 3
+
+MAC address 4
+
+MAC address 5
+
+MAC address 6
+
+wlcontrol.asp
+
+Input MAC address is not complete. It should be 12 digits in hex.
+
+Invalid MAC address. It should be in hex number (0-9 or a-f).
+
+Do you really want to delete the selected entry?
+
+Do you really want to delete the all entries?
+
+The encryption key you selected as the \'Default Key\' cannot be blank.
+
+Invalid length of Key 
+
+value. It should be 
+
+characters.
+
+Invalid key value. It should be in hex number (0-9 or a-f).
+
+ASCII (5 characters)
+
+Hex (10 characters)
+
+ASCII (13 characters)
+
+Hex (26 characters)
+
+wlpsk.asp
+
+Pre-shared key value should be 64 characters.
+
+Invalid pre-shared key value. It should be in hex number (0-9 or a-f).
+
+Pre-Shared Key value should be set at least 8 characters.
+
+Pre-shared key value should be less than 64 characters.
+
+You should select one unicast cipher at least.
+
+wlstatbl.asp
+
+This table shows the MAC address, transmission, receiption packet counters for each associated wireless client.
+
+Tx Packet
+
+Rx Packet
+
+Tx Rate (Mbps)
+
+Expired Time (s)
+
+wlwdswep.asp
+
+The encryption key you selected as the \'Tx Default Key\' cannot be blank.
+
+Invalid length of Key 
+
+value. It should be 
+
+characters.
+
+Invalid key value. It should be in hex number (0-9 or a-f).
+
+ASCII (5 characters)
+
+Hex (10 characters)
+
+ASCII (13 characters)
+
+Hex (26 characters)
+
+wlwsk.asp
+
+ value. It should be the decimal number (0-9).
+
+range in 1st digit. It should be 0-255.
+
+range in 2nd digit. It should be 0-255.
+
+range in 3rd digit. It should be 0-255.
+
+range in 4th digit. It should be 1-254.
+
+The encryption key you selected as the \'Tx Default Key\' cannot be blank.
+
+Invalid length of Key 
+
+value. It should be 
+
+ characters.
+
+Invalid key value. It should be in hex number (0-9 or a-f).
+
+ASCII (5 characters)
+
+Hex (10 characters)
+
+ASCII (13 characters)
+
+Hex (26 characters)
+
+Invalid port number of RADIUS Server! It should be a decimal number between 1-65535.
+
+Invalid port number of RADIUS Server! It should be a decimal number between 1-65535.
+
+RADIUS Server IP address cannot be empty! It should be filled with 4 digit numbers as xxx.xxx.xxx.xxx.
+
+Invalid RADIUS Server IP address
+
+
